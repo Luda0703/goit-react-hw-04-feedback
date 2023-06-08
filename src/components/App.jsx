@@ -36,7 +36,7 @@ import { Notification } from './Notification/Notification';
   return (
     <section >
       <Section title="Please leave feedback">
-         <FeedbackOptions options={['good', 'neutral', 'bad']} onLeaveFeedback={onLeaveFeedback}/>
+         <FeedbackOptions options={Object.keys({good, neutral, bad})} onLeaveFeedback={onLeaveFeedback}/>
       </Section>
 
       <Section title="Statistics">
